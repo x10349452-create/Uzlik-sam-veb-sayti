@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O'ZLIK SAM | Zamonaviy Kasblar Akademiyasi va O'quv Markazi</title>
+  <meta name="description" content="O'zlik SAM o'quv markazida IT dasturlash, UI/UX dizayn, IELTS ingliz tili, rus tili, SMM va buxgalteriya kurslari. Amaliy ta'lim, kuchli mentorlar va kafolatlangan natija!">
+  <meta name="keywords" content="Ozlik SAM, o'quv markazi Samarqand, IT kurslar Samarqand, dasturlash kursi, IELTS Samarqand, dizayn kursi, buxgalteriya 1C">
+  <meta property="og:title" content="O'ZLIK SAM | Zamonaviy Kasblar Akademiyasi">
+  <meta property="og:description" content="O'zligingizni kashf eting, kelajak kasblarini professional mentorlar bilan egallang! Birinchi dars bepul.">
+  <meta property="og:type" content="website">
+  
+  <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome 6.5.1 CDN Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-announcement-bar">
+    <div class="container">
+      <div class="announcement-content">
+        <span class="announcement-badge"><i class="fa-solid fa-bolt"></i> Yangi qabul</span>
+        <p class="announcement-text">
+          Bahorgi intensiv qabul boshlandi! <strong>25-sentyabrgacha</strong> ro'yxatdan o'ting va <strong>20% chegirma</strong>ga ega bo'ling!
+        </p>
+        <div class="announcement-contacts">
+          <a href="tel:+998901234567" class="phone-link"><i class="fa-solid fa-phone"></i> +998 (90) 123-45-67</a>
+          <span class="location-badge"><i class="fa-solid fa-location-dot"></i> Samarqand sh.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / Navigation Bar -->
+  <header class="site-header" id="navbar">
+    <div class="container">
+      <div class="header-inner">
+        <!-- Brand Logo -->
+        <a href="#home" class="brand-logo">
+          <div class="logo-symbol">
+            <i class="fa-solid fa-atom"></i>
+          </div>
+          <div class="logo-text">
+            <span class="brand-name">O'ZLIK</span>
+            <span class="brand-sub">SAM ACADEMY</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="main-nav" id="mainNav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#home" class="nav-link active">Bosh sahifa</a></li>
+            <li class="nav-item"><a href="#afzalliklar" class="nav-link">Afzalliklar</a></li>
+            <li class="nav-item"><a href="#kurslar" class="nav-link">Kurslarimiz</a></li>
+            <li class="nav-item"><a href="#ustozlar" class="nav-link">Mentorlar</a></li>
+            <li class="nav-item"><a href="#jarayon" class="nav-link">O'quv tizimi</a></li>
+            <li class="nav-item"><a href="#fikrlar" class="nav-link">Natijalar</a></li>
+            <li class="nav-item"><a href="#faq" class="nav-link">Savollar</a></li>
+            <li class="nav-item"><a href="#aloqa" class="nav-link">Manzil</a></li>
+          </ul>
+        </nav>
+
+        <!-- Header CTA Actions -->
+        <div class="header-actions">
+          <a href="#register" class="btn btn-primary nav-cta">
+            <span>Bepul Darsga Yozilish</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <button class="mobile-toggle" id="mobileToggle" aria-label="Menyu ochish">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer Overlay -->
+  <div class="mobile-drawer-overlay" id="drawerOverlay"></div>
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <div class="logo-text">
+        <span class="brand-name">O'ZLIK</span>
+        <span class="brand-sub">SAM ACADEMY</span>
+      </div>
+      <button class="drawer-close" id="drawerClose"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="drawer-body">
+      <ul class="mobile-nav-links">
+        <li><a href="#home" class="mobile-link"><i class="fa-solid fa-house"></i> Bosh sahifa</a></li>
+        <li><a href="#afzalliklar" class="mobile-link"><i class="fa-solid fa-star"></i> Afzalliklar</a></li>
+        <li><a href="#kurslar" class="mobile-link"><i class="fa-solid fa-graduation-cap"></i> Kurslarimiz</a></li>
+        <li><a href="#ustozlar" class="mobile-link"><i class="fa-solid fa-chalkboard-user"></i> Mentorlar</a></li>
+        <li><a href="#jarayon" class="mobile-link"><i class="fa-solid fa-diagram-project"></i> O'quv tizimi</a></li>
+        <li><a href="#fikrlar" class="mobile-link"><i class="fa-solid fa-comment-dots"></i> O'quvchilar fikri</a></li>
+        <li><a href="#faq" class="mobile-link"><i class="fa-solid fa-circle-question"></i> Savol-Javob</a></li>
+        <li><a href="#aloqa" class="mobile-link"><i class="fa-solid fa-map-location-dot"></i> Manzil & Aloqa</a></li>
+      </ul>
+      <div class="drawer-footer">
+        <a href="#register" class="btn btn-primary btn-block mobile-cta">
+          <i class="fa-solid fa-paper-plane"></i> Bepul Darsga Yozilish
+        </a>
+        <div class="drawer-phone">
+          <i class="fa-solid fa-phone"></i>
+          <a href="tel:+998901234567">+998 (90) 123-45-67</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="home">
+      <div class="hero-bg-glow glow-1"></div>
+      <div class="hero-bg-glow glow-2"></div>
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Hero Text Content -->
+          <div class="hero-content">
+            <div class="hero-badge">
+              <span class="badge-dot"></span>
+              <span class="badge-text">🏆 Samarqanddagi №1 Zamonaviy Kasblar Markazi</span>
+            </div>
+            <h1 class="hero-title">
+              O'zligingizni Kashf Eting, <br>
+              <span class="text-gradient">Kelajak Kasblarini</span> <br>
+              Biz Bilan Egallang!
+            </h1>
+            <p class="hero-description">
+              <strong>"O'zlik SAM"</strong> o'quv markazida IT dasturlash, UI/UX dizayn, IELTS ingliz tili, rus tili va biznes sohalarida amaliyotchi mentorlar ko'magida o'qing, mustaqil portfolio yarating va nufuzli kompaniyalarda yuqori maoshli ishga kiring!
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#register" class="btn btn-primary btn-lg pulse-glow">
+                <i class="fa-solid fa-rocket"></i>
+                <span>Bepul Sinov Darsiga Yozilish</span>
+              </a>
+              <a href="#kurslar" class="btn btn-secondary btn-lg">
+                <i class="fa-solid fa-book-open"></i>
+                <span>Barcha Kurslar</span>
+              </a>
+            </div>
+
+            <!-- Trust Features List -->
+            <div class="hero-features">
+              <div class="hero-feature-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>1-dars mutlaqo bepul</span>
+              </div>
+              <div class="hero-feature-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Xalqaro QR sertifikat</span>
+              </div>
+              <div class="hero-feature-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Karyera markazi yordami</span>
+              </div>
+              <div class="hero-feature-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>24/7 zamonaviy Coworking</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Visual & Floating Highlights -->
+          <div class="hero-visual">
+            <div class="hero-card-main">
+              <div class="card-glass-header">
+                <div class="window-dots">
+                  <span class="dot red"></span>
+                  <span class="dot yellow"></span>
+                  <span class="dot green"></span>
+                </div>
+                <span class="window-title">Ozlik-SAM-Education.uz</span>
+                <span class="live-pill"><span class="ping"></span> Jonli o'quv muhiti</span>
+              </div>
+              
+              <div class="card-glass-content">
+                <div class="hero-course-preview">
+                  <div class="preview-icon">
+                    <i class="fa-solid fa-laptop-code"></i>
+                  </div>
+                  <div class="preview-details">
+                    <h4>Amaliy Dasturlash & Dizayn</h4>
+                    <p>Haqiqiy buyurtmalar ustida portfolio yaratish</p>
+                    <div class="progress-bar-wrap">
+                      <div class="progress-bar-fill" style="width: 88%;"></div>
+                    </div>
+                    <div class="progress-meta">
+                      <span>O'zlashtirish darajasi: <strong>96%</strong></span>
+                      <span class="badge-success">Junior / Mid</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="hero-mentor-highlight">
+                  <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Sherzod Aliyev" class="mentor-micro-avatar">
+                  <div class="mentor-micro-info">
+                    <strong>Sherzod Aliyev</strong>
+                    <span>Senior IT Mentor (EPAM alumni)</span>
+                  </div>
+                  <div class="rating-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <span>5.0</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Floating Badges -->
+              <div class="floating-badge badge-top-right float-anim">
+                <div class="f-icon f-green"><i class="fa-solid fa-briefcase"></i></div>
+                <div class="f-text">
+                  <strong>93% Ishga joylashish</strong>
+                  <span>Hamkor IT kompaniyalar</span>
+                </div>
+              </div>
+
+              <div class="floating-badge badge-bottom-left float-anim-delay">
+                <div class="f-icon f-blue"><i class="fa-solid fa-user-graduate"></i></div>
+                <div class="f-text">
+                  <strong>5,200+ Bitiruvchi</strong>
+                  <span>Muvaffaqiyatli karyera</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LIVE STATS COUNTER BAR -->
+    <section class="stats-section">
+      <div class="container">
+        <div class="stats-grid" id="statsContainer">
+          <!-- Rendered dynamically from JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- AFZALLIKLARIMIZ / WHY CHOOSE US -->
+    <section class="features-section" id="afzalliklar">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag"><i class="fa-solid fa-crown"></i> Nima uchun O'zlik SAM?</span>
+          <h2 class="section-title">Biz Sizga Faqat Nazariya Emas, <span class="text-gradient">Haqiqiy Karyera</span> Beramiz</h2>
+          <p class="section-subtitle">
+            Samarqanddagi boshqa o'quv markazlaridan farqli ravishda, biz o'quvchini dastlabki kundan boshlab amaliy loyihalar va xalqaro standartlar asosida o'qitamiz.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon bg-indigo">
+              <i class="fa-solid fa-code-branch"></i>
+            </div>
+            <h3 class="feature-title">80% Amaliyot va Real Loyihalar</h3>
+            <p class="feature-desc">
+              Darslar quruq nazariyadan iborat emas. Har bir mavzu real bizneskeyslar, startaplar va buyurtmalar ustida mustahkamlanadi.
+            </p>
+            <div class="feature-footer-mark"><i class="fa-solid fa-check"></i> 5+ ta tayyor portfolio</div>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon bg-emerald">
+              <i class="fa-solid fa-user-tie"></i>
+            </div>
+            <h3 class="feature-title">Kuchli Amaliyotchi Mentorlar</h3>
+            <p class="feature-desc">
+              Sizga oddiy o'qituvchi emas, balki EPAM, IT Park va yirik xalqaro kompaniyalarda 5+ yil ishlagan amaliyotchi dasturchi va ekspertlar dars beradi.
+            </p>
+            <div class="feature-footer-mark"><i class="fa-solid fa-check"></i> Individual nazorat</div>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon bg-amber">
+              <i class="fa-solid fa-building-circle-arrow-right"></i>
+            </div>
+            <h3 class="feature-title">Karyera Markazi & Ish Topish</h3>
+            <p class="feature-desc">
+              Bitiruvchilarimizga professional rezyume tuzish, GitHub va LinkedIn profillarini to'ldirish hamda hamkor kompaniyalarimizda suhbatdan o'tishda ko'maklashamiz.
+            </p>
+            <div class="feature-footer-mark"><i class="fa-solid fa-check"></i> Mock intervyular</div>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon bg-cyan">
+              <i class="fa-solid fa-wifi"></i>
+            </div>
+            <h3 class="feature-title">24/7 Bepul Coworking Markazi</h3>
+            <p class="feature-desc">
+              Darsdan tashqari vaqtlarda ham markazimizga kelib, tezyurar internet, zamonaviy kompyuterlar va qulay muhitda bepul shug'ullanish imkoniyati mavjud.
+            </p>
+            <div class="feature-footer-mark"><i class="fa-solid fa-check"></i> Qahva va qulay joy</div>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon bg-purple">
+              <i class="fa-solid fa-certificate"></i>
+            </div>
+            <h3 class="feature-title">QR Kodli Rasmiy Sertifikat</h3>
+            <p class="feature-desc">
+              Kursni muvaffaqiyatli tamomlagan o'quvchilarga xalqaro formatdagi, onlayn tekshiriladigan ID raqamli rasmiy bitiruv sertifikati taqdim etiladi.
+            </p>
+            <div class="feature-footer-mark"><i class="fa-solid fa-check"></i> Ish beruvchilar e'tirofi</div>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon bg-rose">
+              <i class="fa-solid fa-wallet"></i>
+            </div>
+            <h3 class="feature-title">Bo'lib To'lash va Kafolat</h3>
+            <p class="feature-desc">
+              O'qish to'lovini oylarga bo'lib to'lashingiz mumkin. Birinchi sinov darsi bepul bo'lib, o'quv tizimimiz sizga yoqmasa, hech narsa to'lamaysiz.
+            </p>
+            <div class="feature-footer-mark"><i class="fa-solid fa-check"></i> Qulay to'lov shartlari</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KURSLARIMIZ / COURSES CATALOG WITH FILTERING -->
+    <section class="courses-section" id="kurslar">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag"><i class="fa-solid fa-graduation-cap"></i> O'quv Dasturlari</span>
+          <h2 class="section-title">Samarqandda Eng Talabgir <span class="text-gradient">Zamonaviy Kurslar</span></h2>
+          <p class="section-subtitle">
+            O'zingiz qiziqqan yo'nalishni tanlang, batafsil dastur bilan tanishing va kelajak sohasini egallashni bugun boshlang!
+          </p>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="courses-filter-wrap">
+          <div class="filter-buttons" id="courseFilters">
+            <button class="filter-btn active" data-filter="all">
+              <i class="fa-solid fa-grid-2"></i> Barcha Kurslar (8)
+            </button>
+            <button class="filter-btn" data-filter="it">
+              <i class="fa-solid fa-code"></i> IT & Dasturlash
+            </button>
+            <button class="filter-btn" data-filter="design">
+              <i class="fa-solid fa-bezier-curve"></i> Grafik & UI/UX Dizayn
+            </button>
+            <button class="filter-btn" data-filter="languages">
+              <i class="fa-solid fa-language"></i> Xorijiy Tillar (IELTS/Rus)
+            </button>
+            <button class="filter-btn" data-filter="business">
+              <i class="fa-solid fa-chart-line"></i> Biznes & Buxgalteriya
+            </button>
+          </div>
+        </div>
+
+        <!-- Courses Cards Grid -->
+        <div class="courses-grid" id="coursesGrid">
+          <!-- Dynamic courses injected via js/main.js from js/courses-data.js -->
+        </div>
+
+        <!-- Bottom Consultation Banner -->
+        <div class="course-consult-banner">
+          <div class="consult-text">
+            <h3>Qaysi soha sizga to'g'ri kelishini bilmayapsizmi?</h3>
+            <p>Bizning professional karyera maslahatchimiz sizning qiziqishlaringizni tahlil qilib, eng maqbul kursni bepul tanlab beradi!</p>
+          </div>
+          <a href="#register" class="btn btn-warning">
+            <i class="fa-solid fa-headset"></i> Bepul Konsultatsiya Olish
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENTORLARIMIZ / TEACHERS SECTION -->
+    <section class="mentors-section" id="ustozlar">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag"><i class="fa-solid fa-chalkboard-user"></i> Bizning Jamoa</span>
+          <h2 class="section-title">Sizga Dars Beradigan <span class="text-gradient">Kuchli Mentorlarimiz</span></h2>
+          <p class="section-subtitle">
+            Har bir ustozimiz o'z yo'nalishida ko'p yillik amaliy tajribaga ega bo'lib, yuzlab muvaffaqiyatli shogirdlarni yetishtirib chiqargan.
+          </p>
+        </div>
+
+        <div class="mentors-grid" id="mentorsGrid">
+          <!-- Dynamic mentors injected from js/courses-data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- O'QUV JARAYONI / HOW IT WORKS -->
+    <section class="process-section" id="jarayon">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag"><i class="fa-solid fa-route"></i> Natijaga Elituvchi Yo'l</span>
+          <h2 class="section-title">O'qish Qanday Tashkil Etiladi?</h2>
+          <p class="section-subtitle">
+            Noldan boshlab yuqori daromadli mutaxassis bo'lguncha 4 ta oddiy va aniq bosqich
+          </p>
+        </div>
+
+        <div class="process-timeline">
+          <div class="timeline-step">
+            <div class="step-number">01</div>
+            <div class="step-icon"><i class="fa-solid fa-file-pen"></i></div>
+            <h4 class="step-title">Ariza Qoldiring</h4>
+            <p class="step-desc">Saytimizda ro'yxatdan o'ting. Menejerimiz 15 daqiqa ichida siz bilan bog'lanib, bepul sinov darsiga yozadi.</p>
+          </div>
+
+          <div class="timeline-step">
+            <div class="step-number">02</div>
+            <div class="step-icon"><i class="fa-solid fa-user-check"></i></div>
+            <h4 class="step-title">Bepul Sinov Darsi</h4>
+            <p class="step-desc">Markazimizga kelib birinchi bepul darsda qatnashing, ustoz bilan tanishing va bilim darajangizni bepul tekshirtiring.</p>
+          </div>
+
+          <div class="timeline-step">
+            <div class="step-number">03</div>
+            <div class="step-icon"><i class="fa-solid fa-laptop-file"></i></div>
+            <h4 class="step-title">Amaliy Ta'lim & Loyihalar</h4>
+            <p class="step-desc">Haftada 3 kunlik darslar, shaxsiy mentor nazorati, mustaqil amaliyot va real buyurtmalar ustida ishlash.</p>
+          </div>
+
+          <div class="timeline-step">
+            <div class="step-number">04</div>
+            <div class="step-icon"><i class="fa-solid fa-award"></i></div>
+            <h4 class="step-title">Diplom & Karyera</h4>
+            <p class="step-desc">Bitiruv loyihangizni himoya qiling, QR-sertifikat oling va karyera markazimiz ko'magida ishga joylashing!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HAMKORLAR / COMPANIES HIRING OUR STUDENTS -->
+    <section class="partners-section">
+      <div class="container">
+        <p class="partners-title">Bitiruvchilarimiz O'zbekiston va Xalqaro Yirik Kompaniyalarda Faoliyat Yuritmoqda:</p>
+        <div class="partners-logos">
+          <div class="partner-item"><strong>EPAM</strong> Systems</div>
+          <div class="partner-item"><strong>IT PARK</strong> Uzbekistan</div>
+          <div class="partner-item"><strong>UZUM</strong> Market</div>
+          <div class="partner-item"><strong>PAYME</strong></div>
+          <div class="partner-item"><strong>CLICK</strong>.uz</div>
+          <div class="partner-item"><strong>EXPRESS24</strong></div>
+          <div class="partner-item"><strong>SamDTU</strong> IT Center</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHARHLAR VA NATIJALAR / TESTIMONIALS -->
+    <section class="testimonials-section" id="fikrlar">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag"><i class="fa-solid fa-star"></i> O'quvchilar E'tirofi</span>
+          <h2 class="section-title">O'quvchilarimiz va Ota-onalar <span class="text-gradient">Biz Haqimizda</span></h2>
+          <p class="section-subtitle">
+            Minglab yoshlar "O'zlik SAM" orqali o'z hayotini va kelajagini o'zgartirdi. Ularning samimiy fikrlari bilan tanishing.
+          </p>
+        </div>
+
+        <div class="testimonials-grid" id="testimonialsGrid">
+          <!-- Injected via js/courses-data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ ACCORDION -->
+    <section class="faq-section" id="faq">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag"><i class="fa-solid fa-circle-question"></i> Savol-Javob</span>
+          <h2 class="section-title">Ko'p Beriladigan <span class="text-gradient">Savollarga Javoblar</span></h2>
+          <p class="section-subtitle">
+            Quyida o'quvchilarimiz va ota-onalar tomonidan eng ko'p beriladigan muhim savollarga ochiq va to'liq javob berilgan.
+          </p>
+        </div>
+
+        <div class="faq-container" id="faqAccordion">
+          <!-- Dynamic FAQ injected from js/courses-data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- RO'YXATDAN O'TISH FORMASI / ENROLLMENT FORM (HIGH CONVERSION) -->
+    <section class="register-section" id="register">
+      <div class="container">
+        <div class="register-wrapper">
+          <div class="register-info-col">
+            <div class="register-badge">
+              <i class="fa-solid fa-gift"></i> Maxsus Mavsumiy Taklif!
+            </div>
+            <h2 class="register-title">
+              Kelajagingizga Bugun Investitsiya Qiling va <span class="text-gradient">20% Chegirma</span>ga Ega Bo'ling!
+            </h2>
+            <p class="register-subtitle">
+              Formani to'ldirib ariza qoldiring. Bizning mutaxassis 15 daqiqa ichida qo'ng'iroq qilib, sizni bepul sinov darsiga yozadi va chegirmali vaucherni band qiladi.
+            </p>
+
+            <!-- Limited Time Countdown Timer -->
+            <div class="countdown-box">
+              <p class="countdown-label"><i class="fa-regular fa-clock"></i> Chegirma muddati tugashiga qoldi:</p>
+              <div class="timer-display" id="dealCountdown">
+                <div class="timer-slot">
+                  <span class="timer-num" id="daysNum">04</span>
+                  <span class="timer-unit">Kun</span>
+                </div>
+                <span class="timer-sep">:</span>
+                <div class="timer-slot">
+                  <span class="timer-num" id="hoursNum">16</span>
+                  <span class="timer-unit">Soat</span>
+                </div>
+                <span class="timer-sep">:</span>
+                <div class="timer-slot">
+                  <span class="timer-num" id="minsNum">38</span>
+                  <span class="timer-unit">Daqiqa</span>
+                </div>
+                <span class="timer-sep">:</span>
+                <div class="timer-slot">
+                  <span class="timer-num" id="secsNum">45</span>
+                  <span class="timer-unit">Soniya</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Perks list -->
+            <div class="register-perks">
+              <div class="perk-item">
+                <i class="fa-solid fa-shield-check"></i>
+                <span>Birinchi sinov darsi 100% bepul</span>
+              </div>
+              <div class="perk-item">
+                <i class="fa-solid fa-shield-check"></i>
+                <span>Guruhlarda joylar cheklangan (maksimal 12 nafar)</span>
+              </div>
+              <div class="perk-item">
+                <i class="fa-solid fa-shield-check"></i>
+                <span>To'lovni bo'lib to'lash imkoniyati mavjud</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Registration Form Container -->
+          <div class="register-form-col">
+            <form class="lead-form" id="enrollForm" novalidate>
+              <div class="form-header">
+                <h3>Kursga Yozilish</h3>
+                <p>Quyidagi ma'lumotlarni kiriting</p>
+              </div>
+
+              <!-- Full Name -->
+              <div class="form-group">
+                <label for="fullName"><i class="fa-solid fa-user"></i> Ism va Familiyangiz *</label>
+                <input type="text" id="fullName" class="form-control" placeholder="Masalan: Jamshid Aliyev" required>
+                <span class="field-error" id="nameError">Iltimos, ismingizni kiriting</span>
+              </div>
+
+              <!-- Phone Number -->
+              <div class="form-group">
+                <label for="phoneInput"><i class="fa-solid fa-phone"></i> Telefon Raqamingiz *</label>
+                <input type="tel" id="phoneInput" class="form-control" placeholder="+998 (__) ___-__-__" value="+998 " required>
+                <span class="field-error" id="phoneError">Iltimos, to'liq telefon raqamingizni kiriting</span>
+              </div>
+
+              <!-- Course Select -->
+              <div class="form-group">
+                <label for="courseSelect"><i class="fa-solid fa-book-open"></i> O'qimoqchi bo'lgan kursingiz *</label>
+                <select id="courseSelect" class="form-control" required>
+                  <option value="" disabled selected>Kursni tanlang...</option>
+                  <option value="Frontend Veb Dasturlash">Frontend Veb Dasturlash (HTML, CSS, JS, React)</option>
+                  <option value="Python & Django Backend">Python & Django Backend Dasturlash</option>
+                  <option value="UI/UX & Grafik Dizayn">UI/UX & Grafik Dizayn (Figma, Photoshop)</option>
+                  <option value="Intensive IELTS (0 dan 7.5+)">Intensive IELTS (0 dan 7.5+)</option>
+                  <option value="Rus Tili (So'zlashuv & Amaliyot)">Rus Tili (So'zlashuv & Amaliyot)</option>
+                  <option value="SMM & Raqamli Marketing">SMM & Raqamli Marketing (Target reklama)</option>
+                  <option value="Buxgalteriya 1C va Amaliy Soliqlar">Buxgalteriya 1C va Amaliy Soliqlar</option>
+                  <option value="Kiberxavfsizlik & Tarmoq Asoslari">Kiberxavfsizlik & Tarmoq Asoslari</option>
+                </select>
+                <span class="field-error" id="courseError">Iltimos, o'zingizga qiziq kursni tanlang</span>
+              </div>
+
+              <!-- Time Preference & Format -->
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label for="timePreference"><i class="fa-regular fa-clock"></i> Qulay dars vaqti</label>
+                  <select id="timePreference" class="form-control">
+                    <option value="Ertalab (09:00 - 11:00)">Ertalabki guruh (09:00 - 11:00)</option>
+                    <option value="Tushdan keyin (14:00 - 16:00)">Tushki guruh (14:00 - 16:00)</option>
+                    <option value="Kechki (18:30 - 20:30)" selected>Kechki guruh (18:30 - 20:30)</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="studyFormat"><i class="fa-solid fa-building-user"></i> Ta'lim shakli</label>
+                  <select id="studyFormat" class="form-control">
+                    <option value="Markazda (Offline)" selected>Markazda (Offline)</option>
+                    <option value="Masofaviy (Online)">Masofaviy (Online)</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" class="btn btn-primary btn-block btn-submit" id="submitBtn">
+                <span class="btn-text">
+                  <i class="fa-solid fa-paper-plane"></i> Arizani Yuborish & 20% Chegirma Olish
+                </span>
+                <span class="btn-loading d-none">
+                  <i class="fa-solid fa-spinner fa-spin"></i> Yuborilmoqda...
+                </span>
+              </button>
+
+              <div class="form-privacy-note">
+                <i class="fa-solid fa-lock"></i> Sizning ma'lumotlaringiz xavfsiz saqlanadi va uchinchi shaxslarga berilmaydi.
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MANZIL VA ALOQA / LOCATION & CONTACT -->
+    <section class="contact-section" id="aloqa">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag"><i class="fa-solid fa-map-location-dot"></i> Markazimiz Manzili</span>
+          <h2 class="section-title">Biz Bilan Bog'laning yoki <span class="text-gradient">Mehmonimiz Bo'ling</span></h2>
+          <p class="section-subtitle">
+            Samarqand shahrining eng qulay markaziy hududida joylashgan zamonaviy o'quv markazimizga tashrif buyuring.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Details Cards -->
+          <div class="contact-info-cards">
+            <div class="contact-card">
+              <div class="c-icon bg-indigo"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="c-details">
+                <h4>Bizning Manzil</h4>
+                <p>Samarqand shahri, Mirzo Ulug'bek ko'chasi, 45-uy.</p>
+                <span class="c-hint">Mo'ljal: Samarqand Davlat Universiteti bosh binosi yaqinida</span>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="c-icon bg-emerald"><i class="fa-solid fa-phone-volume"></i></div>
+              <div class="c-details">
+                <h4>Telefon Raqamlarimiz</h4>
+                <p><a href="tel:+998901234567">+998 (90) 123-45-67</a></p>
+                <p><a href="tel:+998919876543">+998 (91) 987-65-43</a></p>
+                <span class="c-hint">Qo'ng'iroqlar har kuni 08:30 dan 20:30 gacha qabul qilinadi</span>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="c-icon bg-cyan"><i class="fa-solid fa-clock"></i></div>
+              <div class="c-details">
+                <h4>Ish Vaqtimiz</h4>
+                <p>Dushanba – Shanba: <strong>08:30 – 20:30</strong></p>
+                <p>Yakshanba: <strong>09:00 – 17:00 (Faqat Coworking va kutubxona)</strong></p>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="c-icon bg-purple"><i class="fa-brands fa-telegram"></i></div>
+              <div class="c-details">
+                <h4>Ijtimoiy Tarmoqlar</h4>
+                <div class="social-links-row">
+                  <a href="https://t.me" target="_blank" class="social-btn tg"><i class="fa-brands fa-telegram"></i> Telegram</a>
+                  <a href="https://instagram.com" target="_blank" class="social-btn ig"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                  <a href="https://youtube.com" target="_blank" class="social-btn yt"><i class="fa-brands fa-youtube"></i> YouTube</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Map / Visual Location Card -->
+          <div class="map-card-wrapper">
+            <div class="map-card-header">
+              <div class="map-title-wrap">
+                <i class="fa-solid fa-compass"></i>
+                <strong>O'zlik SAM Lokatsiyasi (Samarqand)</strong>
+              </div>
+              <a href="https://maps.google.com/?q=Samarkand" target="_blank" class="btn btn-sm btn-outline-light">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Google Xaritada Ochish
+              </a>
+            </div>
+            <div class="map-iframe-box">
+              <iframe 
+                title="O'zlik SAM O'quv Markazi Xaritasi"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49156.42511451554!2d66.9208034!3d39.6548549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38b2933f2d2427a7%3A0xb3e12015f3e9b11e!2sSamarkand%2C%20Uzbekistan!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s" 
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <!-- Col 1: Brand Info -->
+        <div class="footer-col brand-col">
+          <a href="#home" class="brand-logo footer-logo">
+            <div class="logo-symbol">
+              <i class="fa-solid fa-atom"></i>
+            </div>
+            <div class="logo-text">
+              <span class="brand-name">O'ZLIK</span>
+              <span class="brand-sub">SAM ACADEMY</span>
+            </div>
+          </a>
+          <p class="footer-brand-desc">
+            "O'zlik SAM" — Samarqanddagi nufuzli innovatsion o'quv markazi. Biz yoshlarga zamonaviy kasblar, IT texnologiyalar, xorijiy tillar va biznes ko'nikmalarini amaliy o'rgatib, ularni xalqaro darajadagi mutaxassis bo'lishlariga ko'maklashamiz.
+          </p>
+          <div class="footer-social-icons">
+            <a href="https://t.me" target="_blank" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://youtube.com" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Yo'nalishlar -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Mashhur Kurslar</h4>
+          <ul class="footer-links">
+            <li><a href="#kurslar">Frontend Veb Dasturlash</a></li>
+            <li><a href="#kurslar">Python & Django Backend</a></li>
+            <li><a href="#kurslar">UI/UX & Grafik Dizayn</a></li>
+            <li><a href="#kurslar">Intensive IELTS 7.5+</a></li>
+            <li><a href="#kurslar">SMM & Raqamli Marketing</a></li>
+            <li><a href="#kurslar">Buxgalteriya 1C va Soliqlar</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Tezkor Havolalar -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Tezkor Havolalar</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Bosh sahifa</a></li>
+            <li><a href="#afzalliklar">Nega O'zlik SAM?</a></li>
+            <li><a href="#ustozlar">Mentorlarimiz</a></li>
+            <li><a href="#jarayon">O'quv tizimi</a></li>
+            <li><a href="#fikrlar">O'quvchilar natijalari</a></li>
+            <li><a href="#faq">Ko'p beriladigan savollar</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Aloqa va Manzil -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Bog'lanish</h4>
+          <ul class="footer-contact-info">
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Samarqand shahri, Mirzo Ulug'bek ko'chasi, 45-uy</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:+998901234567">+998 (90) 123-45-67</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:info@uzlik-sam.uz">info@uzlik-sam.uz</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-headset"></i>
+              <span>Har kuni 08:30 – 20:30</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="copyright-text">
+          © 2026 <strong>"O'ZLIK SAM" O'quv Markazi</strong>. Barcha huquqlar qonun bilan himoyalangan.
+        </div>
+        <div class="footer-bottom-links">
+          <a href="#">Maxfiylik siyosati</a>
+          <span class="sep">•</span>
+          <a href="#">Ommaviy oferta</a>
+          <span class="sep">•</span>
+          <a href="#">Sertifikatni tekshirish</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- DYNAMIC COURSE DETAILS MODAL -->
+  <div class="modal-backdrop" id="courseModalBackdrop">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span class="modal-badge" id="modalBadge">IT Kursi</span>
+          <h3 class="modal-title" id="modalTitle">Frontend Veb Dasturlash</h3>
+        </div>
+        <button class="modal-close" id="modalCloseBtn" aria-label="Yopish"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+
+      <div class="modal-body" id="modalBody">
+        <!-- Injected dynamically via js/main.js -->
+      </div>
+
+      <div class="modal-footer">
+        <div class="modal-price-wrap">
+          <span class="price-label">Oylik to'lov:</span>
+          <span class="modal-price" id="modalPrice">700,000 so'm / oy</span>
+        </div>
+        <button class="btn btn-primary" id="modalEnrollBtn">
+          <i class="fa-solid fa-paper-plane"></i> Shu Kursga Ro'yxatdan O'tish
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- SUCCESS CONFIRMATION MODAL -->
+  <div class="modal-backdrop" id="successModalBackdrop">
+    <div class="modal-dialog modal-dialog-sm text-center">
+      <div class="success-icon-wrap">
+        <div class="success-icon-circle">
+          <i class="fa-solid fa-check"></i>
+        </div>
+      </div>
+      <h3 class="success-title">Arizangiz Muvaffaqiyatli Qabul Qilindi!</h3>
+      <p class="success-message" id="successMessage">
+        Rahmat! Sizning so'rovingiz qabul qilindi. Menejerimiz <strong>15 daqiqa</strong> ichida ko'rsatilgan telefon raqamingizga qo'ng'iroq qilib, sizni bepul sinov darsiga yozadi va 20% chegirmangizni tasdiqlaydi.
+      </p>
+      <div class="success-info-box">
+        <div class="info-line"><span>Kurs:</span> <strong id="successCourseName">-</strong></div>
+        <div class="info-line"><span>Telefon:</span> <strong id="successPhone">-</strong></div>
+      </div>
+      <button class="btn btn-primary btn-block" id="successCloseBtn">
+        <i class="fa-solid fa-thumbs-up"></i> Tushunarli, Rahmat!
+      </button>
+    </div>
+  </div>
+
+  <!-- QUICK FLOATING ACTION WIDGETS -->
+  <!-- 1. Floating Quick Contact Button -->
+  <div class="floating-contact-wrap">
+    <div class="floating-popover" id="contactPopover">
+      <a href="https://t.me" target="_blank" class="contact-pop-item tg-pop">
+        <i class="fa-brands fa-telegram"></i>
+        <span>Telegramda yozish</span>
+      </a>
+      <a href="tel:+998901234567" class="contact-pop-item phone-pop">
+        <i class="fa-solid fa-phone"></i>
+        <span>Tezkor qo'ng'iroq</span>
+      </a>
+    </div>
+    <button class="floating-contact-btn" id="contactToggleBtn" aria-label="Tezkor aloqa">
+      <i class="fa-solid fa-comments"></i>
+    </button>
+  </div>
+
+  <!-- 2. Scroll to Top Button -->
+  <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Yuqoriga qaytish">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- 3. Live Social Proof Toast -->
+  <div class="social-proof-toast" id="socialProofToast">
+    <div class="toast-avatar">
+      <i class="fa-solid fa-user-check"></i>
+    </div>
+    <div class="toast-info">
+      <p class="toast-text"><strong id="toastName">Sardor (Samarqand)</strong> <span id="toastAction">Frontend kursiga yozildi</span></p>
+      <span class="toast-time" id="toastTime">2 daqiqa oldin</span>
+    </div>
+    <button class="toast-close" id="toastClose"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/courses-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
